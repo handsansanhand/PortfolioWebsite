@@ -13,8 +13,8 @@ Github?
 */
 function Contactdetails() {
     return (
-       <div className="d-flex align-items-center">
-        <span className="me-3">Contact: </span>
+       <div className="d-flex align-items-center contact-details">
+        
                 <a
         href="mailto:jack.kazco@yahoo.ie"
         target="_blank"      // open in new tab

@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Contactdetails from './Contactdetails';
+import { NavLink } from 'react-router-dom';
 
 /*header for the portfolio page, should have a link to
 Home : the homepage
@@ -16,10 +17,43 @@ function Header() {
       <Container fluid> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/aboutpage">About</Nav.Link>
-            <Nav.Link as={Link} to="/projectspage">Projects</Nav.Link>
+          <Nav className="me-auto d-flex gap-4">
+            <Nav.Link 
+                    as={NavLink} 
+                    to="/" 
+                    style={({ isActive }) => ({
+                    fontSize: '28px', 
+                    fontWeight: '800',
+                    color: isActive ? 'blue' : 'inherit',
+                    textDecoration: 'none'
+            })}
+            >
+            Home
+            </Nav.Link>
+            <Nav.Link 
+                as={NavLink} 
+                to="/aboutpage" 
+                style={({ isActive }) => ({
+                    fontSize: '28px', 
+                    fontWeight: '800',
+                    color: isActive ? 'blue' : 'inherit',
+                    textDecoration: 'none'
+                })}
+                >
+                About
+                </Nav.Link>
+            <Nav.Link 
+                as={NavLink} 
+                to="/projectspage" 
+                style={({ isActive }) => ({
+                    fontSize: '28px', 
+                    fontWeight: '800',
+                    color: isActive ? 'blue' : 'inherit',
+                    textDecoration: 'none'
+                })}
+                >
+                Projects
+            </Nav.Link>
           </Nav>
             <Contactdetails/>
         </Navbar.Collapse>
