@@ -27,6 +27,7 @@
 .rightSectionTitle{
      font-weight: 750;
     font-size: 72px
+        
 }
 .aboutMeText {
     font-size: 36px
@@ -35,4 +36,38 @@
 .rightSection {
    
   border: 2px solid blue; 
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 5rem;               
+  flex-wrap: wrap;
+  border: 2px solid black;   
+  border-radius: 12px;      
+  padding: 1rem;            
+}
+.containerTitle {
+    font-size: 32px;
+    font-weight: 700;
+}
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+}
+
+.logoImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-label {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 }

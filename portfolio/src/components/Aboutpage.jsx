@@ -5,6 +5,12 @@ import Image from 'react-bootstrap/Image';
 1) About me section
 
 2) Education and Skills
+Languages:
+C, C++, Java, SQL, Scala, Python
+Technologies:
+Git, Docker, Kubernetes, Maven, Microservices, REST API’s, PostgreSQL, React
+Methodologies:
+Scrum, Agile, Test-Driven-Development, CI/CD
 */
 function Aboutpage() {
     return (
@@ -19,6 +25,47 @@ function Aboutpage() {
             </div>  
            <div className="rightSection">
                 <div className="rightSectionTitle">Skills</div>
+                 <div className="containerTitle">Programming Languages</div>
+                    <div className="skill-container">
+                         <div className="logo-item">
+                            <Image className="logoImage" src="c.png" alt="C Logo" />
+                            <div className="logo-label">C</div>
+                        </div>
+                        <div className="logo-item">
+                            <Image className="logoImage" src="ISO_C++_Logo.svg.png" alt="C++ Logo" />
+                            <div className="logo-label">C++</div>
+                        </div>
+                        <div className="logo-item">
+                            <Image className="logoImage" src="Java_programming_language_logo.svg.png" alt="Java Logo" />
+                            <div className="logo-label">Java</div>
+                        </div>
+                        <div className="logo-item">
+                            <Image className="logoImage" src="Sql_data_base_with_logo.svg.png" alt="SQL Logo" />
+                            <div className="logo-label">SQL</div>
+                        </div>
+                        <div className="logo-item">
+                            <Image className="logoImage" src="scala.png" alt="Scala Logo" />
+                            <div className="logo-label">Scala</div>
+                        </div>
+                        <div className="logo-item">
+                            <Image className="logoImage" src="Python-logo-notext.svg.png" alt="Python Logo" />
+                            <div className="logo-label">Python</div>
+                        </div>
+                        <div className="logo-item">
+                            <Image className="logoImage" src="JavaScript-Logo-300x169.png" alt="JS Logo" />
+                            <div className="logo-label">JavaScript</div>
+                        </div>
+                        
+            </div>
+            <div className="containerTitle">Technologies</div>
+            <div className="skill-container">
+                 <p>Git, Docker, Kubernetes, Maven, Microservices, REST API’s, PostgreSQL, React</p>
+            </div>
+
+            <div className="containerTitle">Methodologies</div>
+            <div className="skill-container">
+                <p>Scrum, Agile, Test-Driven-Development, CI/CD</p>
+            </div>
             </div>  
         </div>
         
