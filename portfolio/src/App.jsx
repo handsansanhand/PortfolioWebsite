@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Homepage from './components/Homepage'
-import Contactpage from './components/Contactpage'
 import Header from './components/Header'
 import Projectspage from './components/Projectspage'
 import './App.css'
@@ -16,7 +15,6 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/contactpage" element={<Contactpage />} />
         <Route path="/projectspage" element={<Projectspage />} />
       </Routes>
     </Router>
