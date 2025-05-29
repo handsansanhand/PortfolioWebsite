@@ -23,7 +23,7 @@ function Contactdetails() {
          title="E-Mail"
          className="me-3 no-style-link"
         >
-        <MdEmail size={38}  />
+        <MdEmail size={48}  />
         </a>
         
         <a
@@ -34,7 +34,7 @@ function Contactdetails() {
          title="LinkedIn"
          className="me-3 no-style-link"
         >
-        <FaLinkedin size={38} />
+        <FaLinkedin size={48} />
         </a>
                 <a
         href="tel:+3530851593979"
@@ -44,7 +44,7 @@ function Contactdetails() {
          title="Mobile Phone"
          className="me-3 no-style-link"
         >
-        <FaSquarePhone size={38}  />
+        <FaSquarePhone size={48}  />
         </a>
         
         <a
@@ -55,7 +55,7 @@ function Contactdetails() {
          title="GitHub"
          className="me-3 no-style-link"
         >
-        <FaGithubSquare size={38}  />    
+        <FaGithubSquare size={48}  />    
         </a>
         
     </div>
