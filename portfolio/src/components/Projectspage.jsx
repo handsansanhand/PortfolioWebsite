@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Projectlist.css'
 import Projectlist from './Projectlist';
+import Projectdetails from './Projectdetails';
 function Projectspage() {
           const navigate = useNavigate();
 return (
@@ -11,7 +12,9 @@ return (
              <Projectlist />
         </div>
            
-        <div className="projectDetailsSection"></div>
+        <div className="projectDetailsSection">
+            <Projectdetails />
+        </div>
      </div>
 
     </>
