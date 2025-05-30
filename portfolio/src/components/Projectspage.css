@@ -1,0 +1,17 @@
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80vh;
+  margin-top: 50px;
+  padding: 0 5rem;
+  border: 2px solid red; 
+  gap: 2rem; /* space between sections */
+}
+
+.projectListSection, .projectDetailsSection {
+  flex: 1 1 0; /* grow and shrink equally, basis 0 */
+  border: 2px solid black;  
+  padding: 1rem;
+  min-width: 0; /* important to allow shrinking and text wrap */
+}

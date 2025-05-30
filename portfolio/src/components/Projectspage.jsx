@@ -1,15 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import { useNavigate, useLocation } from 'react-router-dom';
-
+import './Projectlist.css'
+import Projectlist from './Projectlist';
 function Projectspage() {
           const navigate = useNavigate();
 return (
     <>
-     <Button variant="primary" className="mt-3" onClick={() => {
-            navigate("/");
-        }}>
-                Click me!
-        </Button>
+     <div className="projectsContainer">
+        <div className="projectListSection">
+             <Projectlist />
+        </div>
+           
+        <div className="projectDetailsSection"></div>
+     </div>
+
     </>
        
     );
