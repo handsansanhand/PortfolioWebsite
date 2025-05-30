@@ -59,12 +59,53 @@ function Aboutpage() {
             </div>
             <div className="containerTitle">Technologies</div>
             <div className="skill-container">
-                 <p>Git, Docker, Kubernetes, Maven, Microservices, REST API’s, PostgreSQL, React</p>
+                <div className="logo-item">
+                            <Image className="logoImage" src="github.png" alt="Git Logo" />
+                            <div className="logo-label">GitHub</div>
+                </div>
+                 <div className="logo-item">
+                            <Image className="logoImage" src="docker.png" alt="Docker Logo" />
+                            <div className="logo-label">Docker</div>
+                </div>
+                 <div className="logo-item">
+                            <Image className="logoImage" src="kubernetes.png" alt="Kubernetes Logo" />
+                            <div className="logo-label">Kubernetes</div>
+                </div>
+                 <div className="logo-item">
+                            <Image className="logoImage" src="maven.png" alt="Git Logo" />
+                            <div className="logo-label">Maven</div>
+                </div>
+                <div className="logo-item">
+                            <Image className="logoImage" src="springboot.png" alt="Git Logo" />
+                            <div className="logo-label">SpringBoot</div>
+                </div>
+                 <div className="logo-item">
+                            <Image className="logoImage" src="postgresql.png" alt="Git Logo" />
+                            <div className="logo-label">PostgreSQL</div>
+                </div>
+                <div className="logo-item">
+                            <Image className="logoImage" src="react.png" alt="Git Logo" />
+                            <div className="logo-label">React</div>
+                </div>             
             </div>
 
-            <div className="containerTitle">Methodologies</div>
+            <div className="containerTitle">Other Skills</div>
             <div className="skill-container">
-                <p>Scrum, Agile, Test-Driven-Development, CI/CD</p>
+                 <div className="logo-item">
+                            <div className="logo-label">Microservices</div>
+                </div>
+                <div className="logo-item">
+                            <div className="logo-label">RESTful APIs</div>
+                </div>
+                <div className="logo-item">
+                            <div className="logo-label">Scrum/Agile Development</div>
+                </div>
+                <div className="logo-item">
+                            <div className="logo-label">TDD</div>
+                </div>
+                <div className="logo-item">
+                            <div className="logo-label">CI/CD</div>
+                </div>
             </div>
             </div>  
         </div>
