@@ -6,8 +6,8 @@ import './Projectspage.css'
 
 
 //a list containing all the projects
-function Projectlist() {
-      const [selectedProject, setSelectedProject] = useState(null);
+function Projectlist({selectedProject, setSelectedProject}) {
+      
       const projects = [
     'To-Do List Application',
     'HVAC Based Building Simulator',

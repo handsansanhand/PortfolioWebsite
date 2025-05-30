@@ -1,0 +1,27 @@
+.projectDetails{
+    height: 700px;
+    font-size: 28px;
+}
+.bottomContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.bottomColumn {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.technologiesUsed {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.technologiesUsedTitle {
+ font-weight: 700;
+ font-size: 32px;
+ text-align: center;
+}

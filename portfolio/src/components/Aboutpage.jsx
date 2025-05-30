@@ -1,6 +1,6 @@
 import './Aboutpage.css'
 import Image from 'react-bootstrap/Image';
-
+import LogoItem from './Logoitem';
 /*
 1) About me section
 
@@ -26,67 +26,24 @@ function Aboutpage() {
            <div className="rightSection">
                 <div className="rightSectionTitle">Skills</div>
                  <div className="containerTitle">Programming Languages</div>
-                    <div className="skill-container">
-                         <div className="logo-item">
-                            <Image className="logoImage" src="c.png" alt="C Logo" />
-                            <div className="logo-label">C</div>
-                        </div>
-                        <div className="logo-item">
-                            <Image className="logoImage" src="ISO_C++_Logo.svg.png" alt="C++ Logo" />
-                            <div className="logo-label">C++</div>
-                        </div>
-                        <div className="logo-item">
-                            <Image className="logoImage" src="Java_programming_language_logo.svg.png" alt="Java Logo" />
-                            <div className="logo-label">Java</div>
-                        </div>
-                        <div className="logo-item">
-                            <Image className="logoImage" src="Sql_data_base_with_logo.svg.png" alt="SQL Logo" />
-                            <div className="logo-label">SQL</div>
-                        </div>
-                        <div className="logo-item">
-                            <Image className="logoImage" src="scala.png" alt="Scala Logo" />
-                            <div className="logo-label">Scala</div>
-                        </div>
-                        <div className="logo-item">
-                            <Image className="logoImage" src="Python-logo-notext.svg.png" alt="Python Logo" />
-                            <div className="logo-label">Python</div>
-                        </div>
-                        <div className="logo-item">
-                            <Image className="logoImage" src="JavaScript-Logo-300x169.png" alt="JS Logo" />
-                            <div className="logo-label">JavaScript</div>
-                        </div>
-                        
-            </div>
+                   <div className="skill-container">
+                        <LogoItem src="c.png" alt="C Logo" label="C" />
+                        <LogoItem src="ISO_C++_Logo.svg.png" alt="C++ Logo" label="C++" />
+                        <LogoItem src="Java_programming_language_logo.svg.png" alt="Java Logo" label="Java" />
+                        <LogoItem src="Sql_data_base_with_logo.svg.png" alt="SQL Logo" label="SQL" />
+                        <LogoItem src="scala.png" alt="Scala Logo" label="Scala" />
+                        <LogoItem src="Python-logo-notext.svg.png" alt="Python Logo" label="Python" />
+                        <LogoItem src="JavaScript-Logo-300x169.png" alt="JavaScript Logo" label="JavaScript" />
+                    </div>
             <div className="containerTitle">Technologies</div>
             <div className="skill-container">
-                <div className="logo-item">
-                            <Image className="logoImage" src="github.png" alt="Git Logo" />
-                            <div className="logo-label">GitHub</div>
-                </div>
-                 <div className="logo-item">
-                            <Image className="logoImage" src="docker.png" alt="Docker Logo" />
-                            <div className="logo-label">Docker</div>
-                </div>
-                 <div className="logo-item">
-                            <Image className="logoImage" src="kubernetes.png" alt="Kubernetes Logo" />
-                            <div className="logo-label">Kubernetes</div>
-                </div>
-                 <div className="logo-item">
-                            <Image className="logoImage" src="maven.png" alt="Git Logo" />
-                            <div className="logo-label">Maven</div>
-                </div>
-                <div className="logo-item">
-                            <Image className="logoImage" src="springboot.png" alt="Git Logo" />
-                            <div className="logo-label">SpringBoot</div>
-                </div>
-                 <div className="logo-item">
-                            <Image className="logoImage" src="postgresql.png" alt="Git Logo" />
-                            <div className="logo-label">PostgreSQL</div>
-                </div>
-                <div className="logo-item">
-                            <Image className="logoImage" src="react.png" alt="Git Logo" />
-                            <div className="logo-label">React</div>
-                </div>             
+                        <LogoItem src="github.png" alt="GitHub Logo" label="GitHub" />
+                        <LogoItem src="docker.png" alt="Docker Logo" label="Docker" />
+                        <LogoItem src="kubernetes.png" alt="Kubernetes Logo" label="Kubernetes" />
+                        <LogoItem src="maven.png" alt="Maven Logo" label="Maven" />
+                        <LogoItem src="springboot.png" alt="SpringBoot Logo" label="SpringBoot" />
+                        <LogoItem src="postgresql.png" alt="PostgreSQL Logo" label="PostgreSQL" />
+                        <LogoItem src="react.png" alt="React Logo" label="React" />
             </div>
 
             <div className="containerTitle">Other Skills</div>

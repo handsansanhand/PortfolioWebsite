@@ -3,17 +3,22 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import './Projectlist.css'
 import Projectlist from './Projectlist';
 import Projectdetails from './Projectdetails';
+import { useState } from 'react';
+
 function Projectspage() {
-          const navigate = useNavigate();
+          const [selectedProject, setSelectedProject] = useState(null);
 return (
     <>
      <div className="projectsContainer">
         <div className="projectListSection">
-             <Projectlist />
+             <Projectlist 
+                    selectedProject={selectedProject} 
+                    setSelectedProject={setSelectedProject}
+             />
         </div>
            
         <div className="projectDetailsSection">
-            <Projectdetails />
+            <Projectdetails selectedProject={selectedProject} />
         </div>
      </div>
 
