@@ -4,10 +4,48 @@ import './Projectdetails.css';
 function Projectdetails({ selectedProject }) {
   const projectDetails1 = [
     'Developed a simple to-do list application which allows users to register or sign up, set to-do tasks, and assign them as completed. The application deploys microservice arcitechture, RESTful APIs, persistent data storage, and user authentication. The backend was coded in Java, and the frontend was built using React.',
-    'Details for HVAC Based Building Simulator...',
-    'Details for Excelsior LLM...',
+    'As part of my final year project at U.C.D, I developed a building simulator from scratch. This simulator contains HVAC (Heating, Ventilation, and Air Conditioning) sensors and heavily utilises WoT (Web of Things) technology. As well as the building aspect of the simulation, there is also a decision-making agent who exists inside the building, and a temperature + light level simulation model which changes based on the current time within the simulation. This project was coded in Java + JavaScript and deployed microservice architecture and RESTful APIs.',
+    'Working as a group, I contributed towards the creation and development of an AI powered Java-coded program which generates a comic based on the user’s input, complete with characters, narrators, poses, backgrounds, and a multitude of different layouts which the comic may be structured. The program works with OpenAI’s completions, embeddings and moderation APIs, and works with a database for storing poses and backgrounds.',
     'Details for Cascadia...'
   ];
+  const methodologiesAndTools = [
+    [
+      'Microservices',
+      'RESTful APIs',
+      'Persistent Data Handling',
+      'SQL',
+      'Database Management',
+      'Version Control (GitHub)'
+    ],
+     [
+      'Web of Things (WoT)',
+      'Internet of Things (IoT)',
+      'Microservices',
+      'RESTful APIs',
+      'HTTP/CoAP',
+      'System Design',
+      'Unit Testing',
+      'Simulations',
+      'JQuery',
+      'Version Control (GitHub)'
+    ],
+     [
+      'Artificial Intelligence (AI)',
+      'Large Language Models (LLMs)',
+      'API Integration',
+      'Prompting',
+      'Unit Testing',
+      'Group Work',
+      'Agile Software Development',
+      'Version Control (GitHub)'
+    ],
+     [
+      'Microservices',
+      'RESTful APIs',
+      'Persistent Data Handling',
+      'SQL'
+    ],
+  ]
   const logoItems = [
       [
     { src: "Java_programming_language_logo.svg.png", alt: "Java Logo", label: "Java" },
@@ -23,6 +61,7 @@ function Projectdetails({ selectedProject }) {
     { src: "docker.png", alt: "Docker Logo", label: "Docker" },
     { src: "github.png", alt: "GitHub Logo", label: "GitHub" },
     { src: "maven.png", alt: "Maven Logo", label: "Maven" },
+     {src: "JavaScript-Logo-300x169.png", alt:"JavaScript Logo", label:"JavaScript"} 
   ],
   [
     { src: "Java_programming_language_logo.svg.png", alt: "Java Logo", label: "Java" },
@@ -51,12 +90,13 @@ function Projectdetails({ selectedProject }) {
   <div className="bottomContainer">
     <div className="bottomColumn">
       <div className="containerTitle">Methodologies & Tools</div>
-      <ul>
-        <li>Microservices</li>
-        <li>RESTful APIs</li>
-        <li>Persistent Data Handling</li>
-        <li>SQL</li>
-    </ul>
+
+        <ul className="methodologiesAndToolsList">
+    {methodologiesAndTools[selectedProject].map((methodology, index) => (
+      <li key={index}>{methodology}</li>
+    ))}
+  </ul>
+
     </div>
     <div className="technologiesUsed">
       <div className="containerTitle">Technologies Used</div>
@@ -67,8 +107,8 @@ function Projectdetails({ selectedProject }) {
   </div>
     </div>
   </div> <div className="gitHubLinkContainer">
-                GitHub Link:
-  <a 
+                GitHub Link: 
+   <a 
     href={gitHubLink[selectedProject]} 
     target="_blank" 
     rel="noopener noreferrer"
