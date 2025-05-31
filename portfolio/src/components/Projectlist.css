@@ -1,9 +1,9 @@
 .projectsContainer {
-    
   display: flex;
   height: 100vh;
   padding: 2rem;
   gap: 2rem;
+    align-items: center;
 }
 
 .projectListSection {
@@ -23,6 +23,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
+  
   
 }
 

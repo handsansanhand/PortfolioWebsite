@@ -119,7 +119,7 @@ function Projectdetails({ selectedProject }) {
         </div>    
             </div>
       ) : (
-        <div>Select a project to see details</div>
+        <div className="backUpText">Select a project to see details</div>
       )}
     </div>
   );
