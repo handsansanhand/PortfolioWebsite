@@ -1,3 +1,5 @@
 body {
     font-family: 'Istok Web', sans-serif;
+    background: #424242;
+background: linear-gradient(90deg,rgba(66, 66, 66, 1) 0%, rgba(130, 130, 130, 1) 54%, rgba(189, 189, 189, 1) 100%);
 }
