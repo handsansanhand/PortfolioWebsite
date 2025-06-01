@@ -1,6 +1,6 @@
 import LogoItem from './Logoitem';
 import './Projectdetails.css';
-
+import { motion } from 'framer-motion';
 function Projectdetails({ selectedProject }) {
   const projectDetails1 = [
     'Developed a simple to-do list application which allows users to register or sign up, set to-do tasks, and assign them as completed. The application deploys microservice arcitechture, RESTful APIs, persistent data storage, and user authentication. The backend was coded in Java, and the frontend was built using React.',
@@ -83,7 +83,14 @@ function Projectdetails({ selectedProject }) {
   ];
 
   return (
-    <div className="projectDetails">
+    <>
+                 <motion.div
+                 key={selectedProject}
+                         initial={{ opacity: 0, y: 30 }}
+                         animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        >
+<div className="projectDetails">
       {selectedProject !== null ? (
             <div>
                 {projectDetails1[selectedProject]}
@@ -122,6 +129,10 @@ function Projectdetails({ selectedProject }) {
         <div className="backUpText">Select a project to see details</div>
       )}
     </div>
+    </motion.div>
+    
+    </>
+    
   );
 }
 
