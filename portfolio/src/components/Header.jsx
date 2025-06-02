@@ -24,7 +24,7 @@ function Header() {
                     style={({ isActive }) => ({
                     fontSize: '28px', 
                     fontWeight: '800',
-                    color: isActive ? 'blue' : 'inherit',
+                    color: isActive ? '#73628A' : 'inherit',
                     textDecoration: 'none'
             })}
             >
@@ -36,7 +36,7 @@ function Header() {
                 style={({ isActive }) => ({
                     fontSize: '28px', 
                     fontWeight: '800',
-                    color: isActive ? 'blue' : 'inherit',
+                    color: isActive ? '#73628A' : 'inherit',
                     textDecoration: 'none'
                 })}
                 >
@@ -48,7 +48,7 @@ function Header() {
                 style={({ isActive }) => ({
                     fontSize: '28px', 
                     fontWeight: '800',
-                    color: isActive ? 'blue' : 'inherit',
+                    color: isActive ? '#73628A' : 'inherit',
                     textDecoration: 'none'
                 })}
                 >

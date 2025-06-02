@@ -20,6 +20,7 @@
   height: 75vh;
   text-align: center;
   margin-right: 100px;
+  color: #403452;
 }
 
 
@@ -31,9 +32,11 @@
 
 .title {
     font-size: 114px;
+    color: #EAEAEA;
 }
 .subtitle {
     font-size: 48px;
+    color: #EAEAEA
 }
 .myName {
     margin-top: 20px;
