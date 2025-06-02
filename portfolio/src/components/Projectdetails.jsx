@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Projectdetails({ selectedProject }) {
   const projectDetails1 = [
     'Developed a simple to-do list application which allows users to register or sign up, set to-do tasks, and assign them as completed. The application deploys microservice arcitechture, RESTful APIs, persistent data storage, and user authentication. The backend was coded in Java, and the frontend was built using React.',
-    'As part of my final year project at U.C.D, I developed a building simulator from scratch. This simulator contains HVAC (Heating, Ventilation, and Air Conditioning) sensors and heavily utilises WoT (Web of Things) technology. As well as the building aspect of the simulation, there is also a decision-making agent who exists inside the building, and a temperature + light level simulation model which changes based on the current time within the simulation. This project was coded in Java + JavaScript and deployed microservice architecture and RESTful APIs.',
+    'As part of my final year project at UCD, I developed a building simulator from scratch. This simulator contains HVAC (Heating, Ventilation, and Air Conditioning) sensors and heavily utilises WoT (Web of Things) technology. As well as the building aspect of the simulation, there is also a decision-making agent who exists inside the building, and a temperature + light level simulation model which changes based on the current time within the simulation. This project was coded in Java + JavaScript and deployed microservice architecture and RESTful APIs.',
     'Working as a group, I contributed towards the creation and development of an AI powered Java-coded program which generates a comic based on the user’s input, complete with characters, narrators, poses, backgrounds, and a multitude of different layouts which the comic may be structured. The program works with OpenAI’s completions, embeddings and moderation APIs, and works with a database for storing poses and backgrounds.',
     'As part of a team, I contributed towards the creation and development of a comprehensive interactive digital adaptation of the board game Cascadia. Additionally, I contributed towards implementing a sophisticated AI bot capable of engaging in gameplay with selectable difficulty levels. '
   ];
@@ -92,8 +92,11 @@ function Projectdetails({ selectedProject }) {
                         >
 <div className="projectDetails">
       {selectedProject !== null ? (
-            <div>
-                {projectDetails1[selectedProject]}
+            <div className>
+              <div className="detailsSection"> {
+                projectDetails1[selectedProject]
+                } </div>
+               
                
   <div className="bottomContainer">
     <div className="bottomColumn">

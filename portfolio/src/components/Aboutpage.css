@@ -41,9 +41,12 @@
   align-items: center;     
   gap: 5rem;               
   flex-wrap: wrap;
-  border: 2px solid black;   
-  border-radius: 12px;      
-  padding: 1rem;            
+
+  padding: 1rem;   
+  
+     border: 5px solid #403452;
+  background-color: #EAEAEA;
+  border-radius: 8px;
 }
 .containerTitle {
     font-size: 32px;

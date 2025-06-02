@@ -4,6 +4,7 @@
   align-items: center;
   height: 80vh;
   padding: 0 5rem;
+    height: 80vh;
 }
 
 .textSection {
@@ -33,10 +34,15 @@
 .title {
     font-size: 114px;
     color: #EAEAEA;
+    margin-bottom: 50px;
 }
 .subtitle {
     font-size: 48px;
-    color: #EAEAEA
+    color: #EAEAEA;
+}
+
+.subtitle p {
+  margin: 1px; 
 }
 .myName {
     margin-top: 20px;

@@ -1,5 +1,11 @@
 body {
     font-family: 'Istok Web', sans-serif;
     background: #EAEAEA;
+      min-height: 100vh;
 background: linear-gradient(274deg,rgba(234, 234, 234, 1) 0%, rgba(203, 197, 234, 1) 22%, rgba(115, 98, 138, 1) 50%, rgba(64, 52, 82, 1) 100%);
 }
+body, html {
+  margin: 0;
+  padding: 0;
+}
+

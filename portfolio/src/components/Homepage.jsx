@@ -23,7 +23,11 @@ function Homepage() {
                          animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
                         >
-                         <p className="subtitle">Welcome to my portfolio - explore my projects and feel free to reach out!</p>   
+                       <div className="subtitle">
+                        <p>Welcome to my portfolio</p>   
+                        <p>Explore my projects and feel free to reach out!</p>   
+                        </div>     
+                         
                         </motion.div>
                  
             </div>
@@ -33,7 +37,7 @@ function Homepage() {
                          animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.9 }}
                         >
-                            <Image src="cat.jpg" roundedCircle className="roundedImage"/> 
+                            <Image src="picOfMe.jpg" roundedCircle className="roundedImage"/> 
                         </motion.div>
                             <motion.div
                          initial={{ opacity: 0, y: 30 }}
